@@ -1,0 +1,48 @@
+*
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Content Section */
+.content {
+  margin-left: 100px; 
+  width: 100%;
+  padding: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 80px; 
+  right: 0;
+  height: 60px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.main-content {
+  margin-top: 45px; 
+  padding: 20px;
+  
+}
+
+.chart-heading {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+
+

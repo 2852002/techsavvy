@@ -1,0 +1,89 @@
+
+.heatmap-table-container {
+  margin: 15px 0px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.heatmap-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.heatmap-table th,
+.heatmap-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #5932EA;
+}
+
+.heatmap-table th {
+  background-color: #f2f2f2;
+  font-weight: normal;
+  font-size: 1rem;
+  color: grey;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.heatmap-table td {
+  position: relative; 
+}
+
+.heatmap-table td:first-child,
+.heatmap-table th:first-child {
+  position: sticky;
+  left: 0;
+  color: grey; 
+  background-color: #f2f2f2;
+  z-index: 2; 
+}
+
+/* Heat cell style */
+.heat-cell {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.heat-cell:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.select-hours-text {
+  color: #808080;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .heatmap-table th,
+  .heatmap-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heatmap-table th,
+  .heatmap-table td {
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+}
